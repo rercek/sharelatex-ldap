@@ -1,4 +1,4 @@
-# Overleaf/sharelatex image with LDAP Support Toolkit 
+# Overleaf/sharelatex image with LDAP Support
 
 Original sharelatex image with LDAP support, based on the modification of a few files, mainly [`AuthenticationManager.js`](./ldap/4.1.6/AuthenticationManager.ldap.js) and [`ContactController.js`](./ldap/4.1.6/ContactController.ldap.js). 
 
