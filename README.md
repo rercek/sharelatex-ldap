@@ -1,6 +1,6 @@
 # Overleaf/sharelatex image with LDAP Support Toolkit 
 
-Original sharelatex image with LDAP support, based on the modification of a few files, mainly [`AuthenticationManager.js`](./sharelatex/ldap/4.1.6/AuthenticationManager.ldap.js) and [`ContactController.js`](./sharelatex/ldap/4.1.6/ContactController.ldap.js). 
+Original sharelatex image with LDAP support, based on the modification of a few files, mainly [`AuthenticationManager.js`](./ldap/4.1.6/AuthenticationManager.ldap.js) and [`ContactController.js`](./ldap/4.1.6/ContactController.ldap.js). 
 
 These modifications were directly taken from [this original solution](https://github.com/smhaller/ldap-overleaf-sl) but an "unnecessary" `betaProgram` user flag was used to identify LDAP users from normal e-mail users. Indeed, LDAP users cannot change their password or e-mail in the Overleaf user settings! Several new environment variables have been added to the [`variables.env` file](lib/config-seed//variables.env) for LDAP configuration, which must be done with care.
 
@@ -31,4 +31,4 @@ db.users.update({email : OLDEMAIL},{$set: { email : NEWEMAIL}});
 
 **Automatic update:**
 
-In order to automatically update future versions of the files [`AuthenticationManager.js`](./sharelatex/ldap/4.1.6/AuthenticationManager.ldap.js) and [`ContactController.js`](./sharelatex/ldap/4.1.6/ContactController.ldap.js) with this LDAP implementation, a bash script named [`updateldap.sh`](sharelatex/ldap/updateldap.sh) was created using the _git merge_ function as a base. 
+In order to automatically update future versions of the files [`AuthenticationManager.js`](./ldap/4.1.6/AuthenticationManager.ldap.js) and [`ContactController.js`](./ldap/4.1.6/ContactController.ldap.js) with this LDAP implementation, a bash script named [`updateldap.sh`](sharelatex/ldap/updateldap.sh) was created using the _git merge_ function as a base. 
