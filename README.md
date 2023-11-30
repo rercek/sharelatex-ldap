@@ -31,4 +31,4 @@ db.users.update({email : OLDEMAIL},{$set: { email : NEWEMAIL}});
 
 **Automatic update:**
 
-In order to automatically update future versions of the files [`AuthenticationManager.js`](./ldap/4.1.6/AuthenticationManager.ldap.js) and [`ContactController.js`](./ldap/4.1.6/ContactController.ldap.js) with this LDAP implementation, a bash script named [`updateldap.sh`](sharelatex/ldap/updateldap.sh) was created using the _git merge_ function as a base. 
+In order to automatically update future versions of the files [`AuthenticationManager.js`](./ldap/4.1.6/AuthenticationManager.ldap.js) and [`ContactController.js`](./ldap/4.1.6/ContactController.ldap.js) with this LDAP implementation, a bash script named [`updateldap.sh`](./ldap/updateldap.sh) was created using the _git merge_ function as a base. 
