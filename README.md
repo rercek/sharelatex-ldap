@@ -12,7 +12,7 @@ From [the original solution](https://github.com/smhaller/ldap-overleaf-sl), this
 **Notes:**
 
 - LDAP Users can not change their LDAP password in Overleaf. They have to change it at the LDAP server. 
-- LDAP Users can only reset their local db password which was randomly generated at first login by clicking the "Forgot your password?" link on the [log in page](https://overleaf.lisa.ulb.be/user/password/reset) and using their LDAP e-mail. By default, a LDAP user cannot change their local passwords in the user settings. 
+- LDAP Users can only reset their local db password which was randomly generated at first login by clicking the "Forgot your password?" link on the log in page and using their LDAP e-mail. By default, a LDAP user cannot change their local passwords in the user settings. 
 - LDAP Users should not change their e-mail, as they are uniquely identified in the Overleaf DB by their e-email address. The e-mail address is taken from the LDAP server using the mail field or by invitation through an admin. This LDAP mail field has to contain a valid e-mail address. Firstname and lastname are taken from the fields "givenName" and "sn".   
 - Admins can invite users directly via e-mail. `LDAP_ADMIN_GROUP_FILTER` specified which LDAP users are admins. 
 - An "unnecessary"`betaProgram` flag is now used to identify LDAP users vs. normal e-mail user in order to prevent e-mail (and password) change in the user settings. 
